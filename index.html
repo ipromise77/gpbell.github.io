@@ -1,411 +1,84 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f5f7">
-  <meta name="description" content="Guopeng Zhong — Education, honors, projects, and publications.">
-
+  <meta name="theme-color" content="#f8f5ef">
+  <meta name="description" content="Guopeng Zhong — Education, honors, publications, and projects.">
   <title>Guopeng Zhong</title>
-
-  <link
-    rel="icon"
-    type="image/svg+xml"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d1d1f'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Arial,sans-serif' font-size='25' font-weight='600' fill='white'%3EGZ%3C/text%3E%3C/svg%3E"
-  >
-
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f8f5ef'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='30' fill='%239a5138'%3EGZ%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
-
 <body>
-
-  <a
-    href="#main"
-    class="skip"
-    data-en="Skip to content"
-    data-zh="跳转到正文"
-  >
-    Skip to content
-  </a>
-
-  <header class="topbar">
-    <div class="wrap">
-
-      <a class="brand" href="#main">GZ.</a>
-
-      <div class="controls">
-
-        <nav aria-label="Main navigation">
-          <a
-            href="#education"
-            data-en="Education"
-            data-zh="教育"
-          >
-            Education
-          </a>
-
-          <a
-            href="#honors"
-            data-en="Honors"
-            data-zh="荣誉"
-          >
-            Honors
-          </a>
-
-          <a
-            href="#projects"
-            data-en="Projects"
-            data-zh="项目"
-          >
-            Projects
-          </a>
-
-          <a
-            href="#publications"
-            data-en="Publications"
-            data-zh="论文"
-          >
-            Publications
-          </a>
-        </nav>
-
-        <div
-          class="language"
-          role="group"
-          aria-label="Language / 语言"
-        >
-          <button
-            type="button"
-            data-language="en"
-            aria-pressed="true"
-            lang="en"
-          >
-            EN
-          </button>
-
-          <span aria-hidden="true">/</span>
-
-          <button
-            type="button"
-            data-language="zh"
-            aria-pressed="false"
-            lang="zh-CN"
-          >
-            中文
-          </button>
-        </div>
-
+  <a href="#main" class="skip" data-en="Skip to content" data-zh="跳转到正文">Skip to content</a>
+  <header class="topbar wrap">
+    <a class="brand" href="#main" aria-label="Guopeng Zhong — Home">GZ.</a>
+    <div class="controls">
+      <nav aria-label="Main navigation">
+        <a href="#education" data-en="Education" data-zh="教育">Education</a>
+        <a href="#honors" data-en="Honors" data-zh="荣誉">Honors</a>
+        <a href="#publications" data-en="Publications" data-zh="论文">Publications</a>
+        <a href="#projects" data-en="Projects" data-zh="项目">Projects</a>
+      </nav>
+      <div class="language" role="group" aria-label="Language / 语言">
+        <button type="button" data-language="en" aria-pressed="true" lang="en">EN</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-language="zh" aria-pressed="false" lang="zh-CN">中文</button>
       </div>
     </div>
   </header>
-
   <main class="wrap" id="main">
-
-    <!-- Identity -->
     <div class="identity">
-
-      <h1>
-        <span
-          data-en="Guopeng Zhong"
-          data-zh="钟国鹏"
-        >
-          Guopeng Zhong
-        </span>
-
-        <span
-          class="secondary"
-          data-en="钟国鹏"
-          data-zh="Guopeng Zhong"
-        >
-          钟国鹏
-        </span>
-      </h1>
-
+      <p class="kicker" data-en="Shanghai Jiao Tong University" data-zh="上海交通大学">Shanghai Jiao Tong University</p>
+      <h1><span data-en="Guopeng Zhong" data-zh="钟国鹏">Guopeng Zhong</span><span class="secondary" data-en="钟国鹏" data-zh="Guopeng Zhong">钟国鹏</span></h1>
+      <p class="bio" data-en="Undergraduate · School of Computer Science" data-zh="本科在读 · 计算机学院">Undergraduate · School of Computer Science</p>
       <div class="contact">
-
-        <!-- Location -->
-        <span
-          class="location"
-          style="display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.8"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-            style="flex-shrink: 0;"
-          >
-            <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/>
-            <circle cx="12" cy="10" r="2"/>
-          </svg>
-
-          <span
-            data-en="Shanghai, China"
-            data-zh="中国上海"
-          >
-            Shanghai, China
-          </span>
-        </span>
-
-        <a href="mailto:i_promise23@sjtu.edu.cn">
-          i_promise23@sjtu.edu.cn
-        </a>
-
-        <a href="https://github.com/ipromise77">
-          GitHub ↗
-        </a>
-
+        <span class="location" data-en="Shanghai, China" data-zh="中国上海">Shanghai, China</span>
+        <a href="mailto:i_promise23@sjtu.edu.cn">i_promise23@sjtu.edu.cn</a>
+        <a href="https://github.com/ipromise77" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
       </div>
     </div>
-
-    <!-- Education -->
-    <section
-      class="section"
-      id="education"
-      aria-labelledby="education-title"
-    >
-
-      <h2
-        id="education-title"
-        data-en="Education"
-        data-zh="教育背景"
-      >
-        Education
-      </h2>
-
-      <div>
-
-        <div class="row">
-
-          <h3
-            data-en="Shanghai Jiao Tong University"
-            data-zh="上海交通大学"
-          >
-            Shanghai Jiao Tong University
-          </h3>
-
-          <span
-            class="date"
-            data-en="2024 – Present"
-            data-zh="2024 — 至今"
-          >
-            2024 – Present
-          </span>
-
-        </div>
-
-        <p
-          class="muted"
-          data-en="Undergraduate"
-          data-zh="本科在读"
-        >
-          Undergraduate
-        </p>
-
-        <p
-          class="muted"
-          data-en="School of Computer Science"
-          data-zh="计算机学院"
-        >
-          School of Computer Science
-        </p>
-
-        <p
-          class="muted"
-          data-en="Core-course GPA: 4.00 (Top 5%)"
-          data-zh="核心 GPA：4.00（前5%）"
-        >
-          Core-course GPA: 4.00 (Top 5%)
-        </p>
-
-        <p
-          class="muted"
-          data-en="41 courses with A/A+ grades"
-          data-zh="41门课程获得 A/A+"
-        >
-          41 courses with A/A+ grades
-        </p>
-
+    <section class="section" id="education" aria-labelledby="education-title">
+      <h2 id="education-title"><span class="section-number" aria-hidden="true">01</span><span data-en="Education" data-zh="教育背景">Education</span></h2>
+      <div class="section-content">
+        <div class="row"><h3 data-en="Shanghai Jiao Tong University" data-zh="上海交通大学">Shanghai Jiao Tong University</h3><span class="date" data-en="2024 — Present" data-zh="2024 — 至今">2024 — Present</span></div>
+        <p class="detail" data-en="Undergraduate · School of Computer Science" data-zh="本科在读 · 计算机学院">Undergraduate · School of Computer Science</p>
+        <p class="detail" data-en="Core-course GPA: 4.00 (Top 5%)" data-zh="核心课程 GPA：4.00（前 5%）">Core-course GPA: 4.00 (Top 5%)</p>
+        <p class="detail" data-en="41 courses with A/A+ grades" data-zh="41 门课程获得 A/A+">41 courses with A/A+ grades</p>
       </div>
     </section>
-
-    <!-- Honors -->
-    <section
-      class="section"
-      id="honors"
-      aria-labelledby="honors-title"
-    >
-
-      <h2
-        id="honors-title"
-        data-en="Selected honors"
-        data-zh="荣誉奖项"
-      >
-        Selected honors
-      </h2>
-
-      <ul class="honors">
-
-        <li>
-          <span>
-            <strong
-              data-en="Shanghai Scholarship"
-              data-zh="上海市奖学金"
-            >Shanghai Scholarship</strong><span
-              data-en=" (One of 4 recipients in the School of CS)"
-              data-zh="（计算机学院4名获奖者之一）"
-            > (One of 4 recipients in the School of CS)</span>
-          </span>
-
-          <span class="date">2026</span>
-        </li>
-
-        <li>
-          <span>
-            <strong
-              data-en="National Scholarship, China"
-              data-zh="国家奖学金"
-            >National Scholarship, China</strong><span
-              data-en=" (Top 0.2%)"
-              data-zh="（全国前0.2%）"
-            > (Top 0.2%)</span>
-          </span>
-
-          <span class="date">2025</span>
-        </li>
-
+    <section class="section" id="honors" aria-labelledby="honors-title">
+      <h2 id="honors-title"><span class="section-number" aria-hidden="true">02</span><span data-en="Honors" data-zh="荣誉奖项">Honors</span></h2>
+      <ul class="honors section-content">
+        <li><div><strong data-en="Shanghai Scholarship" data-zh="上海市奖学金">Shanghai Scholarship</strong><p class="detail" data-en="One of 4 recipients in the School of CS" data-zh="计算机学院 4 名获奖者之一">One of 4 recipients in the School of CS</p></div><span class="date">2026</span></li>
+        <li><div><strong data-en="National Scholarship, China" data-zh="国家奖学金">National Scholarship, China</strong><p class="detail" data-en="Top 0.2%" data-zh="全国前 0.2%">Top 0.2%</p></div><span class="date">2025</span></li>
       </ul>
     </section>
-
-    <!-- Projects -->
-    <section
-      class="section"
-      id="projects"
-      aria-labelledby="projects-title"
-    >
-
-      <h2
-        id="projects-title"
-        data-en="Projects"
-        data-zh="项目经历"
-      >
-        Projects
-      </h2>
-
-      <div>
-
-        <div class="row">
-
-          <h3
-            data-en="Goertek Scholars Program &amp; School of Computer Science Student Science and Technology Innovation Fund"
-            data-zh="“歌尔学者”项目暨计算机学院学生科技创新基金"
-          >
-            Goertek Scholars Program &amp; School of Computer Science Student Science and Technology Innovation Fund
-          </h3>
-
-          <span class="date">2026</span>
-
-        </div>
-
-        <p
-          class="muted"
-          data-en="Project Lead"
-          data-zh="项目负责人"
-        >
-          Project Lead
-        </p>
-
-      </div>
-    </section>
-
-    <!-- Publications -->
-    <section
-      class="section"
-      id="publications"
-      aria-labelledby="publications-title"
-    >
-
-      <h2
-        id="publications-title"
-        data-en="Publications"
-        data-zh="学术论文"
-      >
-        Publications
-      </h2>
-
-      <article>
-
-        <div class="venue">
-          NeurIPS 2026 · Evaluations &amp; Datasets Track
-          <span class="badge">Poster</span>
-        </div>
-
-        <h3>
-          <a href="https://arxiv.org/abs/2608.12122">
-            HandEdit: A Unified Benchmark for Egocentric Human-to-Robot Dexterous Hand Image Editing
-          </a>
-        </h3>
-
-        <p class="authors">
-          Zhenjie Yang<sup>†</sup>,
-          Xingyu Jiao<sup>†</sup>,
-          <strong>Guopeng Zhong</strong>,
-          Shuzhe Yang,
-          et al.
-        </p>
-
+    <section class="section" id="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title"><span class="section-number" aria-hidden="true">03</span><span data-en="Publications" data-zh="学术论文">Publications</span></h2>
+      <article class="section-content">
+        <div class="venue"><span>NeurIPS 2026</span><span>Evaluations &amp; Datasets Track · Poster</span></div>
+        <h3 class="paper-title"><a href="https://arxiv.org/abs/2608.12122" target="_blank" rel="noopener noreferrer">HandEdit: A Unified Benchmark for Egocentric Human-to-Robot Dexterous Hand Image Editing</a></h3>
+        <p class="authors">Zhenjie Yang<sup>†</sup>, Xingyu Jiao<sup>†</sup>, <strong>Guopeng Zhong</strong>, Shuzhe Yang, et al.</p>
         <div class="links">
-
-          <a
-            href="https://arxiv.org/abs/2608.12122"
-            data-en="Paper ↗"
-            data-zh="论文 ↗"
-          >
-            Paper ↗
-          </a>
-
-          <a
-            href="https://handedit.github.io"
-            data-en="Project ↗"
-            data-zh="项目主页 ↗"
-          >
-            Project ↗
-          </a>
-
+          <a href="https://arxiv.org/abs/2608.12122" target="_blank" rel="noopener noreferrer" data-en="Paper ↗" data-zh="论文 ↗">Paper ↗</a>
+          <a href="https://handedit.github.io" target="_blank" rel="noopener noreferrer" data-en="Project ↗" data-zh="项目主页 ↗">Project ↗</a>
         </div>
-
       </article>
     </section>
-
-    <!-- Footer -->
-    <footer>
-
-      <span
-        data-en="Guopeng Zhong"
-        data-zh="钟国鹏"
-      >
-        Guopeng Zhong
-      </span>
-
-      <a
-        href="#main"
-        data-en="Back to top ↑"
-        data-zh="回到顶部 ↑"
-      >
-        Back to top ↑
-      </a>
-
-    </footer>
-
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title"><span class="section-number" aria-hidden="true">04</span><span data-en="Projects" data-zh="项目经历">Projects</span></h2>
+      <div class="section-content">
+        <div class="row"><h3 data-en="Goertek Scholars Program" data-zh="“歌尔学者”项目">Goertek Scholars Program</h3><span class="date">2026</span></div>
+        <p class="detail" data-en="&amp; School of Computer Science Student Science and Technology Innovation Fund" data-zh="暨计算机学院学生科技创新基金">&amp; School of Computer Science Student Science and Technology Innovation Fund</p>
+        <p class="detail" data-en="Project Lead" data-zh="项目负责人">Project Lead</p>
+      </div>
+    </section>
+    <footer><span>Guopeng Zhong / 钟国鹏</span><a href="#main" data-en="Back to top ↑" data-zh="回到顶部 ↑">Back to top ↑</a></footer>
   </main>
-
 </body>
 </html>
