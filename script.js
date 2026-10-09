@@ -8,5 +8,12 @@
   document.title=lang==='en'?'Guopeng Zhong':'钟国鹏 · Guopeng Zhong';
  }
  buttons.forEach(button=>button.addEventListener('click',()=>setLanguage(button.dataset.language)));
+ const content=document.querySelector('.content');
+ document.querySelectorAll('[data-scroll-top]').forEach(link=>link.addEventListener('click',event=>{
+  event.preventDefault();
+  const target=getComputedStyle(content).overflowY==='auto'?content:window;
+  target.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+  history.replaceState(null,'','#main');
+ }));
  setLanguage('en');
 })();
